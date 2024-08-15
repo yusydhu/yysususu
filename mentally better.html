@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journal</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="r.png.png"></a>
+        <div class="nav-links" id="navlinks">
+         <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html.html">home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="maim page.html">main page</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>  
+    </nav>    
+    <div class="container">
+        <h1>My Journal</h1>
+        <textarea id="journal" placeholder="Start writing your journal entry here..."></textarea>
+        <button id="saveBtn">Save</button>
+        <button id="clearBtn">Clear</button>
+        <h2>Previous Entries</h2>
+        <ul id="entriesList"></ul>
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script> 
+    <script>
+        var navlinks = document.getElementById("navlinks");
+    
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>  
+
+</body>
+</html>
